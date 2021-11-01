@@ -150,14 +150,15 @@ The user initiates the mint using a MetaMask wallet and signs the transaction. T
 ### Buy & Transfer
 The user initiates the mint using a MetaMask wallet and transfers the minting price in eth to the minting wallet associated with the series. The artist then creates the NFT on OpenSea and transfers it to the wallet the user minted with. It’s recommended the minting price be at least 0.015eth to fully cover gas fees of transferring if the NFT is going to be created on the Ethereum Mainnet.
 
-### Sign & Buy - The user initiates the mint using a MetaMask wallet and signs the transaction agreeing to complete the purchase on OpenSea within 3 days. The artist then creates the NFT on OpenSea and sets it for sale only to the holder of the minting wallet.
+### Sign & Buy
+The user initiates the mint using a MetaMask wallet and signs the transaction agreeing to complete the purchase on OpenSea within 3 days. The artist then creates the NFT on OpenSea and sets it for sale only to the holder of the minting wallet.
 Reserve & Buy - The user initiates the mint using a MetaMask wallet and transfers a percentage of the full minting price in eth to the minting wallet associated with the series. The artist then creates the NFT on OpenSea and sets it for sale only to the holder of the minting wallet.
 
 ## Minting the Genesis edition
 Before you go live it's recommended that you mint the Genesis edition to confirm everything is working correctly and to establish an image for the series. After minting the genesis edition you have a
 
 
-# Minting the NFT
+# Minting each NFT
 Once a person has succesfully minted an edition all teammates are emailed a notification letting them know that the NFT needs to be minted on OpenSea. 
 
 To mint the NFT go into the minting section of the project and select the NFT's needed tab and follow these steps. 
