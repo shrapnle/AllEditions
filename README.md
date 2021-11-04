@@ -13,7 +13,10 @@ In order to use All Editions to mint your generative NFT's you'll need the follo
 - An OpenSea account
 - A working knowledge of javascript
 
-Join the Discord: https://discord.gg/Ywy9u9tfUK
+# Get Started
+
+1. Sign in to https://alleditions.art
+1. Join the Discord: https://discord.gg/Ywy9u9tfUK
 
 # Project Settings
 
