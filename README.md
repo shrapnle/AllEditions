@@ -45,7 +45,7 @@ A short bit about the project and why it's compelling.
 Any additional information you want to share. This is formatable text so it can inlclude links, etc.  
 
 ### Early Minting Reservations
-Enable early Minting to let a certain number of people sign up to get early minting access, which will open as soon as the number of people you set has been reached. Early minting will be restricted to only the wallets of those who signed up for the number of minutes you choose. 
+Enable early Minting to let a certain number of people sign up to get early minting access, which will open as soon as the number of people you set has been reached. Early minting will be restricted to only the wallets of those who signed up for the number of minutes you choose. You may if you choose add wallet to the list manually, start the early minintg period early, and adjust the ending time of the early minting period. 
 
 ## Ownership Perks
 ***Please note at this time verified ownership works on Ethereum mints only, Polygon mints only reflecting the minting owner until OpenSea releases their V2 api and exposes Polygon ownership data.***
