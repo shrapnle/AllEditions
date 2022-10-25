@@ -35,7 +35,7 @@ var svgimg = decodeURIComponent(paper.project.exportSVG({asString:true}));
 sendit(svgimg,"svg"); 
 ```
 
-You can include features by formatting as an object such as 
+You can include attributes by creating an array
 ```
 var features = {};
 features.Orientation = "portrait";
@@ -43,5 +43,12 @@ features.Colors = 5;
 ```
 
 And then adding the features varaible to the sendit function call.  
-sendit(svgimg,"svg",features); 
+'''
+sendit(svgimg,"svg",features);
+'''
+
+## Testing Locally
+If you want to test your script locally before uploading to IPFS. You can create your project and then append the query string found in the studio area of your project in order to test the sending of iteration previews and attribute information.  
+
+
 
