@@ -1,6 +1,10 @@
 # Generative art minting on AllEditions.art
 
-You can add a new generative project to All Edition by going to you profile and clicking on the add project button. Then configuring the title adding a CID for an IPFS folder that conatins all your project files and selecting the artist. 
+You can add a new generative project to All Edition by going to your profile and clicking on the add project button. 
+Then give the projhect.  IPFS folder that conatins all your project files and selecting the artist. 
+You can add a new generative project to All Edition by going to your profile and clicking on the add project button. Then configuring the title adding a CID for a name, select the artist profile to attach it to, and upload a directory that contains your generative files. 
+
+This is currently designed to build on top of the fxhash code framework, so please include the fxhash code snippet. 
 
 In your index.html file just after the fxhash code block add the following code snippet. 
 ```
@@ -27,7 +31,7 @@ var mintit = new URLSearchParams(window.location.search).get('mint');
 ```
 
 At the end of your generative script just after where you would include fxpreview() pass the canvas as a base64 image and call the sendit() function.
-If pusing a PNG or JPG specify it in the function call. 
+If using a PNG or JPG specify it in the function call instead of svg as in the example below. 
 
 Here is an example for pushing an SVG from paperjs
 ```
@@ -47,8 +51,13 @@ And then adding the features varaible to the sendit function call.
 sendit(svgimg,"svg",features);
 '''
 
+You can force automatic minting intead of allowing non-minted itereations by adding "Yes" to the sendit() function
+'''
+sendit(svgimg,"svg",features,"Yes");
+'''
+
 ## Testing Locally
-If you want to test your script locally before uploading to IPFS. You can create your project and then append the query string found in the studio area of your project in order to test the sending of iteration previews and attribute information.  
+If you want to test your script locally before uploading to IPFS. You can create your project on All Editions and then append the query string found in the studio area of your project in order to test the sending of iteration previews and attribute information.  
 
 
 
