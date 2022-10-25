@@ -1,10 +1,10 @@
 # Generative art minting on AllEditions.art
 
-You can add a new generative project to All Edition by going to your profile and clicking on the add project button. 
-Then give the projhect.  IPFS folder that conatins all your project files and selecting the artist. 
-You can add a new generative project to All Edition by going to your profile and clicking on the add project button. Then configuring the title adding a CID for a name, select the artist profile to attach it to, and upload a directory that contains your generative files. 
+You can add a new generative project to [All Editions](https://alleditions.art) by logging in and going to your profile then click on the add project button.
 
-This is currently designed to build on top of the fxhash code framework, so please include the fxhash code snippet. 
+Then configuring the title, select the artist profile to attach it to, and upload a directory that contains your generative files. 
+
+This is currently designed to build on top of the fxhash code framework, so please include the fxhash code snippet in your genertive file. 
 
 In your index.html file just after the fxhash code block add the following code snippet. 
 ```
@@ -30,28 +30,26 @@ var mintit = new URLSearchParams(window.location.search).get('mint');
 </script>
 ```
 
-At the end of your generative script just after where you would include fxpreview() pass the canvas as a base64 image and call the sendit() function.
-If using a PNG or JPG specify it in the function call instead of svg as in the example below. 
-
-Here is an example for pushing an SVG from paperjs
+At the end of your generative script in the same spot you would include fxpreview() you will pass the canvas as a base64 image and call the sendit() function. 
 ```
 var svgimg = decodeURIComponent(paper.project.exportSVG({asString:true}));
 sendit(svgimg,"svg"); 
 ```
+If using a PNG or JPG specify it in the function call instead of svg as in the example above. 
 
-You can include attributes by creating an array
+You can pass through attributes by creating an array
 ```
 var features = {};
 features.Orientation = "portrait";
 features.Colors = 5;
 ```
 
-And then adding the features varaible to the sendit function call.  
+And then passing the features variable to the sendit function call.  
 '''
 sendit(svgimg,"svg",features);
 '''
 
-You can force automatic minting intead of allowing non-minted itereations by adding "Yes" to the sendit() function
+You can also force automatic minting intead of allowing non-minted itereation exporations by adding "Yes" to the sendit() function
 '''
 sendit(svgimg,"svg",features,"Yes");
 '''
