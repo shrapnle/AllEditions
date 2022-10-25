@@ -1,8 +1,8 @@
 # Generative art minting on AllEditions.art
 
-You can add a new generative project to [All Editions](https://alleditions.art) by logging in and going to your profile then click on the add project button.
+You can add a new generative project to [All Editions](https://alleditions.art) by logging in and going to your profile then click on the add project button. You'll select the "a new generative studio project" option. 
 
-Then configuring the title, select the artist profile to attach it to, and upload a directory that contains your generative files. 
+Then give the project a title, select the artist profile to attach it to, and upload a directory that contains your generative files. Or alternatly add a CID for an IPFS folder you have allready uploaded.  
 
 This is currently designed to build on top of the fxhash code framework, so please include the fxhash code snippet in your genertive file. 
 
