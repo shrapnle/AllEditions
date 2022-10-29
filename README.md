@@ -17,6 +17,13 @@ var mintit = new URLSearchParams(window.location.search).get('mint');
   function sendit(data,ext,features,mintit) {
     if (mintit == null) {mintit="No"}else{mintit="Yes"}
     base64file = btoa(data);
+     if (ext != "svg"){
+            var canvas1 = document.getElementById("myCanvas"); 
+            var jpgimg = canvas1.toDataURL('image/jpeg').replace(/^.+,/, '');
+            base64file = jpgimg;
+            ext = "jpg"
+            console.log(jpgimg)
+        }
     attr = JSON.stringify(features).replace(/\"/g,"'")
     var filename=fxhash+"."+ext;
     var url = 'https://alleditions.art/api/1.1/wf/genimg';
