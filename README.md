@@ -22,9 +22,9 @@ In your index.html file just after the fxhash code block add the following code 
         if (mintit == "yes") {mintit="Yes";}else{mintit="No";}
         if (features == null){features={};}
         var canvas1 = document.getElementById("myCanvas"); 
-        var jpgimg = canvas1.toDataURL('image/jpeg').replace(/^.+,/, '');
-        var base64file = jpgimg;
-        ext = "jpg";
+        var pngimg = canvas1.toDataURL('image/png').replace(/^.+,/, '');
+        var base64file = pngimg;
+        ext = "png";
         attr = JSON.stringify(features).replace(/\"/g,"'")
         var filename=fxhash+"."+ext;
         var url = 'https://alleditions.art/api/1.1/wf/genimg';
